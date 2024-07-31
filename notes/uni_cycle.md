@@ -5,25 +5,25 @@ Le modèle unicycle est utilisé pour des robots qui ont une direction de mouvem
 
 ### Modèle Mathématique
 Les équations de mouvement pour un modèle unicycle en deux dimensions sont les suivantes :
-\[ \dot{x} = v \cos(\theta) \]
-\[ \dot{y} = v \sin(\theta) \]
-\[ \dot{\theta} = \omega \]
+$\dot{x} = v \cos(\theta)$
+$\dot{y} = v \sin(\theta)$
+$\dot{\theta} = \omega$
 
-- \( (x, y) \) sont les coordonnées de position du robot.
-- \( \theta \) est l'angle d'orientation du robot par rapport à l'axe \( x \).
-- \( v \) est la vitesse linéaire du robot (tangente à son orientation).
-- \( \omega \) est la vitesse angulaire (vitesse de rotation).
+- $(x, y)$ sont les coordonnées de position du robot.
+- $\theta$ est l'angle d'orientation du robot par rapport à l'axe $x$.
+- $v$ est la vitesse linéaire du robot (tangente à son orientation).
+- $\omega$ est la vitesse angulaire (vitesse de rotation).
 
 ### Utilisation
 Le modèle unicycle est utilisé dans la conception et l'analyse de systèmes de contrôle pour les robots mobiles. Il permet de modéliser et de contrôler des robots de manière à ce qu'ils suivent des trajectoires spécifiques ou atteignent des positions cibles en évitant des obstacles.
 
 ### Exemple de Contrôle
-Pour déplacer un robot unicycle vers une cible \((x_f, y_f)\), les commandes de contrôle pourraient être définies de la manière suivante :
-\[ v = k_v \sqrt{(x_f - x)^2 + (y_f - y)^2} \]
-\[ \omega = k_\omega (\theta_d - \theta) \]
-où \(\theta_d\) est l'angle désiré calculé comme :
-\[ \theta_d = \arctan2(y_f - y, x_f - x) \]
-et \( k_v \) et \( k_\omega \) sont des gains de proportionnalité.
+Pour déplacer un robot unicycle vers une cible $(x_f, y_f)$, les commandes de contrôle pourraient être définies de la manière suivante :
+$v = k_v \sqrt{(x_f - x)^2 + (y_f - y)^2}$
+$\omega = k_\omega (\theta_d - \theta)$
+où $\theta_d$ est l'angle désiré calculé comme :
+$\theta_d = \arctan2(y_f - y, x_f - x)$
+et $k_v$ et $k_\omega$ sont des gains de proportionnalité.
 
 ### Avantages et Limitations
 **Avantages :**

@@ -23,6 +23,7 @@ class Agent :
         self.cible_attacked = False
         self.cible_x = None
         self.cible_y = None
+        self.energy = ...
     
     @abstractmethod
     def update(self):

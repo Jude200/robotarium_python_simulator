@@ -26,9 +26,10 @@ class Robot(Agent):
                 # Approach the target
                 # print(f"\t Robot {self.id} approch target ...")
                 self.move(-self.x + self.cible_x, -self.y + self.cible_y)
-            else :
-                # Stop 
-                self.move(0, 0)
+        
+        if self.cible_detected and self.cible_attacked:
+            # Stop
+            self.move(0, 0)
         
         # Si le robot connait l'emplacement de la cible, il la communique à ses voision
         if self.cible_detected:

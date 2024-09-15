@@ -5,7 +5,7 @@ SPEED = .2
 DETECTION_RANGE = 0.3
 
 # Distance to the target for attacking 
-ATTACK_RANGE = 0.15 
+ATTACK_RANGE = 0.2
 
 # Reduction of target energy for robot attacking the target
 ATTACK_STRENGTH = 0.01 
